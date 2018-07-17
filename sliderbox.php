@@ -15,7 +15,7 @@
                         <div {*}li{*} id="sh-slide-{$slide->id}" class="f-grid-4" data-bg-size-s="{$slide->bg->size1|escape}" data-bg-size-e="{$slide->bg->size2|escape}" data-image="{$slide->bg->src|escape}" data-color-start="{$slide->bg->color1}" data-color-end="{$slide->bg->color2}" data-href="{$slide->href|escape}" data-orientation="{$slide->bg->orientation|escape}">
                             {if $slide->img->src}
                                 <a class="slider-img" href="{$slide->href|escape}" title="{$slide->name}">
-                                    <img data-align="{$slide->img->pos}" data-animation="{$slide->img->anim}" width="100%" height="175" data-duration="{$slide->img->time}" src="{imageUrl type='boxesGfx' image=$slide->img->src}" alt="{$slide->name}" />
+                                    <img data-align="{$slide->img->pos}" data-animation="{$slide->img->anim}" width="100%" height="280" data-duration="{$slide->img->time}" src="{imageUrl type='boxesGfx' image=$slide->img->src}" alt="{$slide->name}" />
                                     <p>{$slide->name}</p>
                                 </a>
                             {/if}
